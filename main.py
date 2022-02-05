@@ -32,4 +32,9 @@ class Blog(BaseModel):
 
 @app.post('/blog')
 def create_blog(blog: Blog):
-    return {'data': f'blog is created {blog.title}'}
+    return {'data': 'blog is created {blog.title{'}
+
+
+# if __name__ == '__main__':
+#     import uvicorn
+#     uvicorn.run(app, host='127.0.0.1', port=9000)
